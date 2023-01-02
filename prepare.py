@@ -8,6 +8,8 @@ from pydataset import data
 
 from env import host, username, password, sql_connexion
 
+from sklearn.model_selection import train_test_split
+
 
 
 ## THIS FUNCTION WILL PREPARE THE TELCO DATASET FOR USE IN ANALYSIS.
@@ -24,7 +26,7 @@ def prep_telco(df):
     ##     Encode the categorical columns. 
     #      Create dummy variables of the categorical columns and concatenate them onto the dataframe.
     
-    dummy_df = pd.get_dummies(df[['gender','partner', 'dependents', 'paperless_billing']])    
+    dummy_df = pd.get_dummies(df[['gender','partner', 'dependents', 'paperless_billing', 'churn']])    
     
     
     ##  Concatenate the original dataframe and the dummy variables
