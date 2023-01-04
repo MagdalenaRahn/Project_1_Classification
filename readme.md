@@ -8,15 +8,16 @@ _Project Goals :
 
 
 _Initial Hypotheses : 
-1. Customer age (Senior Citizens vs non-Senior Citizens) has an influence on churn rate (COUNTPLOT 5).
+1. Customer age (Senior Citizens vs non-Senior Citizens) has an influence on churn rate (COUNTPLOT 1).
 >>> Based on the chi-squared test, there does appear to be a relationship between senior citizen customers and churn rate.
 
-2. Customer purchase of tech_support has an influence on churn rate (COUNTPLOT 1).
+2. Customer purchase of tech_support has an influence on churn rate (COUNTPLOT 3).
 >>>  Based on the chi-squared test, there does appear to be a relationship between customer purchase of tech support and churn rate.
 
-3. The internet_service_type (ie, DSL, Fiber optic, no internet service) has an influence on churn rate (COUNTPLOT 7).
+3. The internet_service_type (ie, DSL, Fiber optic, no internet service) has an influence on churn rate (COUNTPLOT 4).
+>>> No statistical test was run on this hypothesis.
 
-4. Having paperless billing has an influence on churn rate (COUNTPLOT 3).
+4. Having paperless billing has an influence on churn rate (COUNTPLOT 2).
 >>>  Based on the chi-squared test, there does appear to be a relationship between customer use of paperless billing and churn rate.
 
 _Data Dictionary :
@@ -34,12 +35,25 @@ _The Process :
 
 2. Analyse the tidied data based on customer age, customer purchase of security add-ons, customer choice of internet service type, and customer purchase of phone service compared with and to customer purchase of internet service. (These are, also, the four hypotheses to be examined in essaying to determine customer churn rates.)
 
-3. Model the data using comparative visualisations in Tableau.
+3. Model the data using comparative visualisations in Python (Seaborn and MatPlotLib).
 
 4. Apply statistical modelling in Python to select data to determine mathematical probability as compared with visual indications.
 
+
 _Exploration Summary :
 1. After graphing the four hypotheses and using statistical testing on three of the hypotheses, it appears that there is an initial relationship between customer churn and the test variables, notably that churn is influence by being a senior citizen, or, separately, by the purchase of tech support, or, separately, by use of paperless billing.
+
+General takeaways are that the variables so far analysed (paperless billing, tech support, being a senior citizen) do have an influence on increased customer churn rates that lead rates.
+
+Going forward, modelling will be done on these four variables, compared with the baseline of no-churn. The modelling seeks to determine potential actions of Telco customers, namely, how likely a customer is to churn, or, leave the company.
+
+
+
+    After your explore section, before you start modeling, provide a summary of your findings in Explore
+    Include a summary of your take-aways
+    Include a summary of the features you examined and weather or not you will be going to Modeling with each feature and why
+    It is important to note which features will be going into your model so the reader knows what features you are using to model on
+
 
 
 --
