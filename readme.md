@@ -1,10 +1,24 @@
 **This readme.md contains information on Codeup Data Science, Noether cohort, Project 1 : Classification (January 2023).**
 
+_Title : 
+Analysing Customer Churn At Telco
+
+
+
+_Project Description :
+1. Telco, a phone and internet service provider to general consumers, has been experiencing a high rate of customer loss, or, churn. This project seeks to determine factors contributing to the high rate of churn, and provide suggestions to overcome this customer loss.
+
+2. The future of Telco rests on its ability to maintain and grow its customer base. Such a high rate of churn as is presently being experienced not only decreases company revenue, it also decreases employee, customer and public image confidence.
+
+
+
 
 _Project Goals :
-1. To examine the Telco Churn database and, using visualisations in Tableau and statistical tests in the Python programming language.
+1. To examine the Telco Churn database and, using visualisations (charts) and statistical tests in the Python programming language.
 
 2. To determine which factor or factors lead to customer churn.
+
+
 
 
 _Initial Hypotheses : 
@@ -20,6 +34,9 @@ _Initial Hypotheses :
 4. Having paperless billing has an influence on churn rate (COUNTPLOT 2).
 >>>  Based on the chi-squared test, there does appear to be a relationship between customer use of paperless billing and churn rate.
 
+
+
+
 _Data Dictionary :
 1. Tenure : Customer time with Telco company in months.
 
@@ -29,8 +46,11 @@ _Data Dictionary :
 
 4. Churn : Customer churn, or, a yes (1) / no (0) representation of whether the customer has left the company.
 
+5. TN, FP, FN, TP : True negative, false positive, false negative, true positive. Use to describe the data in confusion matrices.
 
-_The Process :
+
+
+_The Process / Project Plan :
 1. Obtain and explore initial, tidied Telco data to examine numbers in the four hypotheses categories. Do this using simple Python coding.
 
 2. Analyse the tidied data based on customer age, customer purchase of security add-ons, customer choice of internet service type, and customer purchase of phone service compared with and to customer purchase of internet service. (These are, also, the four hypotheses to be examined in essaying to determine customer churn rates.)
@@ -39,31 +59,26 @@ _The Process :
 
 4. Apply statistical modelling in Python to select data to determine mathematical probability as compared with visual indications.
 
+5. Provide suggestions and next steps.
+
+
 
 _Exploration Summary :
 1. After graphing the four hypotheses and using statistical testing on three of the hypotheses, it appears that there is an initial relationship between customer churn and the test variables, notably that churn is influence by being a senior citizen, or, separately, by the purchase of tech support, or, separately, by use of paperless billing.
 
-General takeaways are that the variables so far analysed (paperless billing, tech support, being a senior citizen) do have an influence on increased customer churn rates that lead rates.
+2. General takeaways are that the variables so far analysed (paperless billing, tech support, being a senior citizen) do have an influence on increased customer churn rates that lead rates.
 
-Going forward, modelling will be done on these four variables, compared with the baseline of no-churn. The modelling seeks to determine potential actions of Telco customers, namely, how likely a customer is to churn, or, leave the company.
-
-
-
-    After your explore section, before you start modeling, provide a summary of your findings in Explore
-    Include a summary of your take-aways
-    Include a summary of the features you examined and weather or not you will be going to Modeling with each feature and why
-    It is important to note which features will be going into your model so the reader knows what features you are using to model on
+3. Going forward, modelling will be done on these four variables, compared with the baseline of no-churn. The modelling seeks to 
 
 
 
---
+_For further exploration : If customer purchase of all security add-ons (online_security, online_backup, device_protection, tech_support) has an influence in churn rate.
 
-compared with = similarities and differences
-compared to = likening to  
+_For further modelling : Use scatter plots instead of bar plots to graph more than two variables at a time.
 
---
 
-For further exploration : If customer purchase of all security add-ons (online_security, online_backup, device_protection, tech_support) has an influence in churn rate.
 
-For further modelling : Use scatter plots instead of bar plots to graph more than two variables at a time.
+_Steps To Reproduce :
+1. Import pre-existing or create 'acquire' and 'prepare' modules.
 
+2. 
