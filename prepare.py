@@ -16,6 +16,11 @@ from sklearn.model_selection import train_test_split
 
 def prep_telco(df):
     
+    '''
+    This function serves to tidy and prepare the 
+    Telco dataset for use in analysis and evaluation.
+    '''
+    
     ##   Drop any unnecessary, unhelpful, or duplicated columns :
     ##   payment_type_id, internet_service_type_id, contract_type_id 
     

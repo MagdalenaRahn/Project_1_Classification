@@ -2,6 +2,8 @@
 
 _Title : 
 Analysing Customer Churn At Telco
+_Author :
+Magdalena Rahn
 
 
 
@@ -17,6 +19,17 @@ _Project Goals :
 1. To examine the Telco Churn database and, using visualisations (charts) and statistical tests in the Python programming language.
 
 2. To determine which factor or factors lead to customer churn.
+
+
+
+_Initial Questions :
+1. Does customer age have an influence on churn rate ?
+
+2. Do customers with tech support churn more or less than customers without tech support ?
+
+3. Do customers without internet, with DSL or with fiber optic internet churn more or less than customers with a different internet service ?
+
+4. Do customers with paperless billing churn more or less than customers without paperless billing ?
 
 
 
@@ -71,14 +84,27 @@ _Exploration Summary :
 3. Going forward, modelling will be done on these four variables, compared with the baseline of no-churn. The modelling seeks to 
 
 
-
+***
 _For further exploration : If customer purchase of all security add-ons (online_security, online_backup, device_protection, tech_support) has an influence in churn rate.
 
 _For further modelling : Use scatter plots instead of bar plots to graph more than two variables at a time.
-
+***
 
 
 _Steps To Reproduce :
-1. Import pre-existing or create 'acquire' and 'prepare' modules.
 
-2. 
+1. Assure the presence of a Python environment on your computer.
+
+1. Import :
+        - Python libraries pandas, numpy, matplotlib, seaborn and scipy, 
+        - The Telco database from https://www.kaggle.com/datasets/yeanzc/telco-customer-churn-ibm-dataset and 
+            save the file locally, 
+        - Pre-existing or self-created data 'acquire' and 'prepare' modules,
+
+2. Tidy the data.
+
+3. Explore using charts, statistical evaluation and modelling.
+
+4. Evaluate, analyse and form conclusions and recommendations.
+
+5. Create a .csv file of the final evaluated data and predictions, consisting of customer ID, probability of not churning and prediction of remaining a customer.
